@@ -118,98 +118,12 @@ module.exports = {
             }
           }
         },
-        lg: {
-          css: {
-            fontFamily: theme('fontFamily.serif').join(','),
-            lineHeight: '1.5rem',
-            p: {
-              marginTop: 0,
-              marginBottom: '1.5rem',
-            },
-            img: {
-              marginTop: 0,
-              marginBottom: 0,
-            },
-            'ul, ol': {
-              paddingLeft: 0,
-              '> li': {
-                paddingLeft: 0,
-              }
-            },
-            li: {
-              marginTop: 0,
-              marginBottom: 0,
-              paddingLeft: 0,
-            },
-            blockquote: {
-              fontSize: theme('fontSize.2xl'),
-              paddingLeft: 0,
-              borderLeftWidth: 0,
-            },
-          }
-        },
-        xl: {
-          css: {
-            lineHeight: '1.75rem',
-            'ul, ol': {
-              paddingLeft: 0,
-            },
-            blockquote: {
-              paddingLeft: 0,
-              borderLeftWidth: 0,
-            },
-          }
-        },
-        '2xl': {
-          css: {
-            lineHeight: '1.875rem',
-            'ul, ol': {
-              paddingLeft: 0,
-            },
-            h3: {
-              fontSize: '1em',
-              marginBottom: 0,
-              marginTop: 0,
-            },
-            blockquote: {
-              fontSize: theme('fontSize.3xl'),
-              paddingLeft: 0,
-            }
-          }
-        },
-        white: {
-          css: {
-            color: theme('colors.white'),
-            a: {
-              color: theme('colors.brand.base'),
-              '&:hover': {
-                color: theme('colors.white'),
-              },
-            },
-            '--tw-prose-body': theme('colors.white'),
-            '--tw-prose-headings': theme('colors.white'),
-            '--tw-prose-lead': theme('colors.white'),
-            '--tw-prose-links': theme('colors.brand.base'),
-            '--tw-prose-bold': theme('colors.white'),
-            '--tw-prose-counters': theme('colors.brand.base'),
-            '--tw-prose-bullets': theme('colors.brand.base'),
-            '--tw-prose-hr': theme('colors.brand.base'),
-            '--tw-prose-quotes': theme('colors.white'),
-            '--tw-prose-quote-borders': theme('colors.brand.base'),
-            '--tw-prose-captions': theme('colors.brand.base'),
-            // '--tw-prose-code': theme('colors.white'),
-            // '--tw-prose-pre-code': theme('colors.pink[100]'),
-            '--tw-prose-pre-bg': theme('colors.white'),
-            '--tw-prose-th-borders': theme('colors.white'),
-            '--tw-prose-td-borders': theme('colors.white'),
-          },
-        }
       })
     },
   },
   plugins: [
     require('@tailwindcss/typography')({
-      className: 'wysiwyg',
+      className: 'user_content',
     }),
   ],
 }
