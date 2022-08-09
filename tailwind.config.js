@@ -3,7 +3,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   content: [
     // Add the files from which to check classes
-    '**/*.{html}'
+    './index.html'
   ],
   theme: {
     extend: {
