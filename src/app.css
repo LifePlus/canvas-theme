@@ -1,11 +1,29 @@
-@tailwind base;
+/* @tailwind base; */
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  html {
-    font-size: 16px;
-  }
+.user_content {
+  @apply font-serif;
+}
+
+.pages.show .user_content .page-title,
+.pages.show .user_content h2 {
+  @apply font-sans;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 400;
+}
+
+.pages.show .user_content h3 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.user_content a {
+  @apply font-sans text-brand-primary;
+  text-decoration: underline;
 }
 
 @font-face {

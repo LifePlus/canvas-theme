@@ -45,6 +45,7 @@ module.exports = {
             color: theme('colors.black'),
             fontFamily: theme('fontFamily.serif').join(','),
             lineHeight: '1.5rem',
+            maxWidth: 'none',
             a: {
               'transition-property': 'color, text-decoration-color',
               'transition-timing-function': 'cubic-bezier(0.4, 0, 0.2, 1)',
@@ -122,8 +123,8 @@ module.exports = {
     },
   },
   plugins: [
-    require('@tailwindcss/typography')({
-      className: 'user_content',
-    }),
+    // require('@tailwindcss/typography')({
+    //   className: 'user_content',
+    // }),
   ],
 }
